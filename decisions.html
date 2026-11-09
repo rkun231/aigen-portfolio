@@ -56,6 +56,8 @@
   .lb-me{color:var(--ink)}
   .me{background:#faf9f5;border:1px solid var(--line);border-radius:10px;padding:8px 11px}
   .badge{display:inline-block;font-size:12.5px;font-weight:700;padding:1px 9px;border-radius:999px;margin-right:2px}
+  .memo-tag{flex:none;font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;line-height:20px;white-space:nowrap}
+  .me .add{display:block;margin-top:5px;font-size:13px;color:var(--muted)}
   .b-ch{background:var(--ch-soft);color:var(--ch)}
   .b-keep{background:var(--keep-soft);color:var(--keep)}
   .b-wait{background:var(--wait-soft);color:var(--wait)}
@@ -91,7 +93,7 @@
       <div class="stat s-ch" role="listitem"><span class="n">25</span><span class="t">바꾸기</span></div>
       <div class="stat" role="listitem"><span class="n">38</span><span class="t">이대로</span></div>
     </div>
-    <p class="how">처음 안내에서 바로 고른 것 <b>38건</b>, 그림 설명을 다시 듣고 고른 것 <b>25건</b>입니다. 바로 고른 것 가운데 <b>2건</b>은 나중에 다시 생각해 바꿨습니다. 처음 안내는 56건이었고, 몇 항목을 작게 나누고 새로 생긴 항목을 더해 63건이 됐습니다.</p>
+    <p class="how">처음 안내에서 바로 고른 것 <b>38건</b>, 그림 설명을 다시 듣고 고른 것 <b>25건</b>입니다. 바로 고른 것 가운데 <b>2건</b>은 나중에 다시 생각해 바꿨습니다. 처음 안내는 56건이었고, 몇 항목을 작게 나누고 새로 생긴 항목을 더해 63건이 됐습니다. 이 가운데 <b>3건</b>(A-7·A-8·D-4)은 고칠지 정한 결정이 아니라 확인 메모라서 따로 표시했습니다.</p>
     <nav class="toc" aria-label="구역 바로 가기">
       <a href="#a">A. 병원 택시 앱 <b>14</b></a><a href="#b">B. 병원 택시 포트폴리오 <b>19</b></a><a href="#c">C. 컨디션 신호등 MMA 앱 <b>17</b></a><a href="#d">D. 컨디션 신호등 MMA 포트폴리오 <b>12</b></a><a href="#e">그 밖에 <b>1</b></a>
     </nav>
@@ -174,14 +176,14 @@
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 이대로 둡니다. 지금 규칙을 유지합니다.</p>
   <p class="meta">AI 검증 1·2·3라운드에서 나온 항목</p>
 </li>
-<li class="it st-keep">
-  <div class="ih"><span class="code">A-7</span><h3>건드리면 안 되는 값 확인 메모</h3></div>
+<li class="it st-keep" id="i-a7">
+  <div class="ih"><span class="code">A-7</span><h3>건드리면 안 되는 값 확인 메모</h3><span class="memo-tag">확인 메모</span></div>
   <p class="ai"><span class="lb">AI가 본 것</span>센터 번호, 저장 공간 이름, 시험용 주소, 버튼 기록 코드가 그대로인지 확인한 메모입니다. 고칠 일이 아니라 &quot;건드리지 말 것&quot; 표시입니다.</p>
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 이대로 둡니다.</p>
   <p class="meta">AI 검증 3라운드에서 나온 항목</p>
 </li>
-<li class="it st-keep">
-  <div class="ih"><span class="code">A-8</span><h3>검사 프로그램 실행 요령 메모</h3></div>
+<li class="it st-keep" id="i-a8">
+  <div class="ih"><span class="code">A-8</span><h3>검사 프로그램 실행 요령 메모</h3><span class="memo-tag">확인 메모</span></div>
   <p class="ai"><span class="lb">AI가 본 것</span>AI가 검사 프로그램을 돌릴 때 한글이 깨지지 않게 하는 요령을 적은 작업 메모입니다. 앱과는 상관이 없습니다.</p>
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 이대로 둡니다.</p>
   <p class="meta">AI 검증 3라운드에서 나온 항목</p>
@@ -191,10 +193,10 @@
 <section class="sec" id="b" aria-labelledby="h-b">
   <div class="sh"><h2 id="h-b"><span class="sl">B</span>병원 택시 포트폴리오</h2><p class="ss">12장면 발표자료와 자세히 보기 · 19건 · 바꾸기 6 · 이대로 13 · 결정 전 0</p></div>
   <ol class="items">
-<li class="it st-keep">
+<li class="it st-keep" id="i-b1">
   <div class="ih"><span class="code">B1</span><h3>표지에 &#x27;문제&#x27; 한 줄이 새로 들어갔어요</h3></div>
   <p class="ai"><span class="lb">AI가 본 것</span>표지만 봐서는 무슨 문제를 풀었는지 안 보인다는 평가가 있어서, AI가 &#x27;자세히 보기&#x27;에 있던 문장을 표지에 &#x27;문제&#x27; 줄로 옮겨 왔습니다.</p>
-  <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 처음엔 &#x27;바꾸기&#x27;를 골랐다가, 다시 생각해 &#x27;이대로 두기&#x27;로 바꿨습니다. 표지는 원래대로 돌려놓았습니다.</p>
+  <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 처음엔 &#x27;바꾸기&#x27;를 골랐다가, 다시 생각해 &#x27;이대로 두기&#x27;로 바꿨습니다. 표지의 &#x27;문제&#x27; 줄은 그대로 두었습니다(한때 지웠다가 다시 넣었습니다).</p>
   <p class="meta">AI 검증 1·2·3라운드에서 나온 항목 · <span class="flag">나중에 마음 바꿈</span></p>
 </li>
 <li class="it st-ch">
@@ -352,10 +354,10 @@
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 다시 설명을 들었습니다. 고칠 것은 없고, 실제 아이폰으로 확인하는 일이 남았습니다.</p>
   <p class="meta">AI 검증 1·2·3라운드에서 나온 항목 · <span class="flag">다시 설명 듣고 고름</span></p>
 </li>
-<li class="it st-ch">
+<li class="it st-ch" id="i-c7add">
   <div class="ih"><span class="code">C7-추가</span><h3>말로 식단을 넣으면 칼로리 찾기</h3></div>
   <p class="ai"><span class="lb">AI가 본 것</span>제가 &quot;마이크로 먹은 것을 말하면 칼로리를 찾아 주는 기능&quot;을 부탁했고, AI가 돈이 드는 방식과 안 드는 방식을 비교했습니다. 돈이 안 드는 방식은 &quot;국물 빼고&quot; 같은 조건을 알아듣지 못합니다.</p>
-  <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-ch">바꾸기</span> 무료 방식으로 진행합니다. 다음 버전(0.1.16)에 11월 9일쯤 넣을 예정입니다.</p>
+  <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-ch">바꾸기</span> 무료 방식으로 진행합니다. 다음 버전(0.1.16)에 11월 9일쯤 넣을 예정입니다. <span class="add">덧붙임(11월 9일): 11월 7일 v0.1.17에 넣었고, 8일 아이폰으로 직접 말해 보며 마이크가 안 꺼지는 문제를 찾아 고쳤습니다.</span></p>
   <p class="meta">제가 직접 요청한 것 · <span class="flag">다시 설명 듣고 고름</span></p>
 </li>
 <li class="it st-keep">
@@ -483,8 +485,8 @@
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-ch">바꾸기</span> 그림을 보고, 고치기로 했습니다.</p>
   <p class="meta">AI 검증 1·2·3라운드에서 나온 항목 · <span class="flag">다시 설명 듣고 고름</span></p>
 </li>
-<li class="it st-keep">
-  <div class="ih"><span class="code">D-4</span><h3>검사한 저장 시점 메모</h3></div>
+<li class="it st-keep" id="i-d4">
+  <div class="ih"><span class="code">D-4</span><h3>검사한 저장 시점 메모</h3><span class="memo-tag">확인 메모</span></div>
   <p class="ai"><span class="lb">AI가 본 것</span>AI 검증자가 어느 저장 시점을 보고 검사했는지 적어 둔 메모입니다. 고칠 일은 아닙니다.</p>
   <p class="me"><span class="lb lb-me">내 결정</span><span class="badge b-keep">이대로</span> 다시 설명을 듣고, 이대로 두기로 했습니다. 공개 페이지에서는 메모 내용을 뺐습니다.</p>
   <p class="meta">AI 검증 3라운드에서 나온 항목 · <span class="flag">다시 설명 듣고 고름</span></p>
@@ -506,7 +508,7 @@
 
 <footer>
   <div class="wrap">
-    <p>이 페이지의 글은 AI가 초안을 쓰고, 제가 읽고 확인했습니다.</p>
+    <p id="about">글은 AI가 정리했고, 각 줄의 &#x27;내 결정&#x27;과 이유는 제가 고른 것입니다.</p>
     <p>유경군 · <a href="index.html">포트폴리오 입구로 돌아가기</a> · <a href="https://rkun231.github.io/taxi-portfolio/">병원 택시 포트폴리오</a> · <a href="https://rkun231.github.io/condition-light-mma/portfolio/">컨디션 신호등 MMA 포트폴리오</a></p>
   </div>
 </footer>
